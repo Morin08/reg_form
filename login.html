@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="regform.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <div class="image-text">
+                <h2>Welcome Back!</h2>
+                <p>Please login to access your account.</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="header">
+                <h1>Login</h1>
+            </div>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="loginEmail" placeholder="Email Address" required />
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="loginPassword" placeholder="Password" required />
+                </div>
+
+                <button type="submit" class="btn-submit">Login</button>
+                
+                <div class="form-footer">
+                    Don't have an account? <a href="regform.html">Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="regform.js"></script>
+</body>
+</html>

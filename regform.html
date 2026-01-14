@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="regform.css" />
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="image-section">
+          <div class="image-text">
+             <h2>Join Us!</h2>
+             <p>Create an account to get started.</p>
+          </div>
+      </div>
+
+      <div class="form-section">
+          <div class="header">
+            <h1>Register</h1>
+          </div>
+          
+          <form id="registrationForm">
+            <div class="row">
+              <div class="input-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="firstName" placeholder="First Name" required />
+                <span class="error-msg" id="firstNameError">Letters only</span>
+              </div>
+              <div class="input-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="lastName" placeholder="Last Name" required />
+                <span class="error-msg" id="lastNameError">Letters only</span>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="number" id="phone" placeholder="Phone Number" required />
+                    <span class="error-msg" id="phoneError">Must be 11 digits</span>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email Address" required />
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required />
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+                    <span class="error-msg" id="passError">Passwords do not match</span>
+                </div>
+            </div>
+
+            <div class="checkbox-group">
+              <label><input type="checkbox" required /> I agree with terms.</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Register</button>
+
+            <div class="form-footer">
+              Already have an account? <a href="login.html">Login</a>
+            </div>
+          </form>
+      </div>
+    </div>
+
+    <script src="regform.js"></script>
+  </body>
+</html>
