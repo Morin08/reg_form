@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     };
                     localStorage.setItem("user", JSON.stringify(userData));
                     alert("Registration Successful! Redirecting...");
-                    window.location.href = "login.html";
+                    window.location.href = "index.html";
                 } else {
                     alert("Error: Some fields are missing in the HTML.");
                 }
@@ -127,4 +127,5 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
 });
